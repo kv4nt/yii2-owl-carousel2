@@ -1,0 +1,22 @@
+{
+    "name": "kv4nt/yii2-owl-carousel2",
+    "description": "A Yii2 widget for owl carousel 2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","carousel","owlcarousel","owlcarousel2","owl","yii2-owl-carousel","yii2 carousel"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Victor Shumeyko",
+            "email": "kvant90@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "minimum-stability" : "dev",
+    "autoload": {
+        "psr-4": {
+            "kv4nt\\owlcarousel\\": ""
+        }
+    }
+}
