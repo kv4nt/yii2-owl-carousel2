@@ -1,8 +1,8 @@
 <?php
 
 /**
- * @link      https://github.com/kv4nt/yii2-owlcarousel2
- * @license   https://github.com/kv4nt/yii2-owlcarousel2/blob/master/LICENSE.md
+ * @link      https://github.com/kv4nt/yii2-owl-carousel2
+ * @license   https://github.com/kv4nt/yii2-owl-carousel2/blob/master/LICENSE.md
  */
 
 namespace kv4nt\owlcarousel;
