@@ -2,7 +2,7 @@
     "name": "kv4nt/yii2-owl-carousel2",
     "description": "A Yii2 widget for owl carousel 2",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension","carousel","owlcarousel","owlcarousel2","owl","yii2-owl-carousel","yii2 carousel","yii2 owl caousel","yii2 owlcaousel","yii2 owl","yii2 caousel"],
+    "keywords": ["yii2","extension","carousel","owlcarousel","owlcarousel2","owl","yii2-owl-carousel","yii2 carousel","yii2 owl carousel","yii2 owlcarousel","yii2 owl","yii2 carousel"],
     "license": "MIT",
     "authors": [
         {
@@ -14,7 +14,7 @@
         "yiisoft/yii2": "*",
          "bower-asset/owl.carousel" : "*"
     },
-    "minimum-stability" : "dev",
+    "minimum-stability" : "stable",
     "autoload": {
         "psr-4": {
             "kv4nt\\owlcarousel\\": ""
