@@ -12,7 +12,7 @@
     ],
     "require": {
         "yiisoft/yii2": "*",
-         "bower-asset/owl.carousel" : "*"
+        "bower-asset/owl.carousel" : "*"
     },
     "minimum-stability" : "stable",
     "autoload": {
