@@ -22,6 +22,9 @@ or add
 
 to the require section of your `composer.json` file.
 
+Plugin options
+-----
+see at https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html
 
 Usage
 -----
