@@ -40,11 +40,13 @@ OwlCarouselWidget::begin([
         'id' => 'container-id',
         'class' => 'container-class'
     ],
-    'pluginOptions' => [
-        'autoPlay' => 3000,
-        'items' => 2,
-        'itemsDesktop' => [1199,3],
-        'itemsDesktopSmall' => [979,3]
+    'pluginOptions'    => [
+        'autoplay'          => true,
+        'autoplayTimeout'   => 3000,
+        'items'             => 3,
+        'loop'              => true,
+        'itemsDesktop'      => [1199, 3],
+        'itemsDesktopSmall' => [979, 3]
     ]
 ]);
 
