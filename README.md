@@ -32,6 +32,7 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
+<?php
 use kv4nt\owlcarousel\OwlCarouselWidget;
 
 OwlCarouselWidget::begin([
@@ -49,6 +50,7 @@ OwlCarouselWidget::begin([
         'itemsDesktopSmall' => [979, 3]
     ]
 ]);
+?>
 
 <div class="item-class"><img src="/img/1.jpg" alt="Image 1"></div>
 <div class="item-class"><img src="/img/2.jpg" alt="Image 2"></div>
@@ -56,4 +58,4 @@ OwlCarouselWidget::begin([
 <div class="item-class"><img src="/img/4.jpg" alt="Image 4"></div>
 
 
-OwlCarouselWidget::end();
+<?php OwlCarouselWidget::end(); ?>
