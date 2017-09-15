@@ -5,7 +5,6 @@ The OwlCarouselWidget is a Yii2 wrapper for the [Owl Carousel 2] (https://owlcar
 
 [![Latest Stable Version](https://poser.pugx.org/kv4nt/yii2-owl-carousel2/v/stable.svg)](https://packagist.org/packages/kv4nt/yii2-owl-carousel2)
 [![Total Downloads](https://poser.pugx.org/kv4nt/yii2-owl-carousel2/downloads.svg)](https://packagist.org/packages/kv4nt/yii2-owl-carousel2)
-[![Build Status](https://travis-ci.org/kv4nt/yii2-owl-carousel2.svg?branch=master)](https://travis-ci.org/kv4nt/yii2-owl-carousel2)
 
 
 Installation
