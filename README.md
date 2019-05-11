@@ -1,7 +1,11 @@
 Owl Carousel Widget 2
 ============================
 
-The OwlCarouselWidget is a Yii2 wrapper for the [Owl Carousel 2] (https://owlcarousel2.github.io/)
+The OwlCarouselWidget is a Yii2 wrapper for the [Owl Carousel 2] (https://owlcarousel2.github.io/OwlCarousel2/)
+
+[![Latest Stable Version](https://poser.pugx.org/kv4nt/yii2-owl-carousel2/v/stable.svg)](https://packagist.org/packages/kv4nt/yii2-owl-carousel2)
+[![Total Downloads](https://poser.pugx.org/kv4nt/yii2-owl-carousel2/downloads.svg)](https://packagist.org/packages/kv4nt/yii2-owl-carousel2)
+
 
 Installation
 ------------
@@ -22,6 +26,9 @@ or add
 
 to the require section of your `composer.json` file.
 
+Plugin options
+-----
+see at https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html
 
 Usage
 -----
@@ -29,26 +36,30 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
+<?php
 use kv4nt\owlcarousel\OwlCarouselWidget;
 
 OwlCarouselWidget::begin([
     'container' => 'div',
     'containerOptions' => [
-        'id' => 'my-container-id',
-        'class' => 'my-container-class'
+        'id' => 'container-id',
+        'class' => 'container-class'
     ],
-    'pluginOptions' => [
-        'autoPlay' => 3000,
-        'items' => 4,
-        'itemsDesktop' => [1199,3],
-        'itemsDesktopSmall' => [979,3]
+    'pluginOptions'    => [
+        'autoplay'          => true,
+        'autoplayTimeout'   => 3000,
+        'items'             => 3,
+        'loop'              => true,
+        'itemsDesktop'      => [1199, 3],
+        'itemsDesktopSmall' => [979, 3]
     ]
 ]);
+?>
 
-<div class="my-item-class"><img src="my-image-1" alt="My Image"></div>
-<div class="my-item-class"><img src="my-image-2" alt="My Image"></div>
-<div class="my-item-class"><img src="my-image-3" alt="My Image"></div>
-<div class="my-item-class"><img src="my-image-4" alt="My Image"></div>
+<div class="item-class"><img src="/img/1.jpg" alt="Image 1"></div>
+<div class="item-class"><img src="/img/2.jpg" alt="Image 2"></div>
+<div class="item-class"><img src="/img/3.jpg" alt="Image 3"></div>
+<div class="item-class"><img src="/img/4.jpg" alt="Image 4"></div>
 
 
-OwlCarouselWidget::end();
+<?php OwlCarouselWidget::end(); ?>

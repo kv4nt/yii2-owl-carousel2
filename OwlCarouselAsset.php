@@ -18,34 +18,30 @@ class OwlCarouselAsset extends AssetBundle
 {
 
     /**
-     * @inheritdoc
+     * @var string the directory that contains the source asset files for this asset bundle.
+     */
+    public $sourcePath = '@bower/owl.carousel';
+
+    /**
+     * @var array list of CSS files that this bundle contains.
      */
     public $css = [
-        'css/owl.carousel.min.css',
-        'css/owl.theme.default.min.css',
+        'dist/assets/owl.carousel.min.css',
+        'dist/assets/owl.theme.default.min.css',
     ];
 
     /**
-     * @inheritdoc
+     * @var array list of JavaScript files that this bundle contains.
      */
     public $js = [
-        'js/owl.carousel.min.js',
+        'dist/owl.carousel.min.js',
     ];
 
     /**
-     * @inheritdoc
+     * @var array list of depends assets that this bundle contains.
      */
     public $depends = [
         'yii\web\JqueryAsset',
     ];
-
-    /**
-     * @inheritdoc
-     */
-    public function init()
-    {
-        $this->sourcePath = __DIR__ . '/assets';
-        parent::init();
-    }
 
 }
