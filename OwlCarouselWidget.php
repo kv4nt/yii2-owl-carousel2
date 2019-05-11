@@ -8,6 +8,7 @@
 namespace kv4nt\owlcarousel;
 
 use yii\helpers\Html;
+use yii\helpers\Json;
 
 /**
  * Owl Carousel widget is a yii2 wrapper for Owl Carousel Plugin
@@ -81,7 +82,7 @@ class OwlCarouselWidget extends \yii\base\Widget
     {
         OwlCarouselAsset::register($view);
         $js = 'jQuery("#' . $this->containerOptions['id'] . '").owlCarousel(' . "\n";
-        $js .= json_encode($this->pluginOptions) . "\n";
+        $js .= Json::encode($this->pluginOptions) . "\n";
         $js .= ");\n";
         $view->registerJs($js, $view::POS_READY);
     }
@@ -93,7 +94,7 @@ class OwlCarouselWidget extends \yii\base\Widget
     public function run()
     {
         $content = ob_get_clean();
-        $view = $this->getView();
+        $view    = $this->getView();
         $this->registerAssets($view);
         return Html::tag($this->container, $content, $this->containerOptions);
     }
