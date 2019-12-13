@@ -41,9 +41,10 @@ use kv4nt\owlcarousel\OwlCarouselWidget;
 
 OwlCarouselWidget::begin([
     'container' => 'div',
+    'assetType' => OwlCarouselWidget::ASSET_TYPE_CDN,
     'containerOptions' => [
         'id' => 'container-id',
-        'class' => 'container-class'
+        'class' => 'container-class owl-theme'
     ],
     'pluginOptions'    => [
         'autoplay'          => true,
