@@ -47,6 +47,12 @@ class OwlCarouselWidget extends \yii\base\Widget
     public $assetType = self::ASSET_TYPE_LOCAL;
 
     /**
+     * By default jQuery function is "jQuery" or "$"
+     * @var string
+     */
+    public $jqueryFunction = 'jQuery';
+
+    /**
      * Initializes the widget.
      *
      */
@@ -90,7 +96,7 @@ class OwlCarouselWidget extends \yii\base\Widget
             OwlCarouselAssetCDN::register($view);
         }
 
-        $js = 'jQuery("#' . $this->containerOptions['id'] . '").owlCarousel(' . "\n";
+        $js = $this->jqueryFunction.'("#' . $this->containerOptions['id'] . '").owlCarousel(' . "\n";
         $js .= Json::encode($this->pluginOptions) . "\n";
         $js .= ");\n";
         $view->registerJs($js, $view::POS_READY);
