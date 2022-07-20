@@ -42,7 +42,7 @@ class OwlCarouselAssetCDN extends AssetBundle
      * @var string[]
      */
     public $jsOptions = [
-        'async' => 'async',
+        'defer' => 'defer',
     ];
 
 }
