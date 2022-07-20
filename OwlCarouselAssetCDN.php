@@ -38,4 +38,11 @@ class OwlCarouselAssetCDN extends AssetBundle
         'yii\web\JqueryAsset',
     ];
 
+    /**
+     * @var string[]
+     */
+    public $jsOptions = [
+        'async' => 'async',
+    ];
+
 }
